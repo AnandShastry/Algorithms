@@ -40,8 +40,8 @@ void merge(int *targetarr,int l,int m,int r)
    int nR=r-m;
    
    //create 2 temp arrays and copy 
-   int temparrleft[nL];
-   int temparrRight[nR];
+   int temparrleft*=new int[nL]; // dynamically allocate it as array cannot be initiated with non const value
+   int temparrRight*=new int[nR];
    
    /* Copy data to temp arrays L[] and R[] */
     for (i = 0; i < nL; i++)
